@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
 from myblog.models import Post
+from django.contrib.syndication.views import Feed
+from django.urls import reverse, path
 
 # Create your views here.
 def stub_view(request, *args, **kwargs):
